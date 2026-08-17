@@ -9,7 +9,7 @@ VoroGaze::run_vorogaze()
 
 The app runs locally on `127.0.0.1` by default. Files you upload remain in a
 private temporary directory for that Shiny session and are deleted when the
-session ends. Do not use identifiable or sensitive participant data.
+session ends.
 
 ## What this repository contains
 
