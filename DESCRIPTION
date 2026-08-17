@@ -1,0 +1,31 @@
+Package: VoroGaze
+Type: Package
+Title: Local Research Workbench for Face-Viewing Fixation Data
+Version: 0.1.0
+Authors@R: person("Matthew", "Green", email = "mjgreen@users.noreply.github.com", role = c("aut", "cre"))
+Description: Runs a local Shiny workbench for importing, mapping, checking,
+    annotating, and summarising fixation data against researcher-defined facial
+    areas of interest. Includes a small synthetic worked example.
+License: MIT + file LICENSE
+URL: https://github.com/mjgreen/vorogaze_aoi_ecvp_2026
+BugReports: https://github.com/mjgreen/vorogaze_aoi_ecvp_2026/issues
+Encoding: UTF-8
+Depends:
+    R (>= 4.2.2)
+Imports:
+    bslib (>= 0.9.0),
+    deldir (>= 2.0-4),
+    digest (>= 0.6.37),
+    dplyr (>= 1.1.4),
+    DT (>= 0.34.0),
+    htmltools,
+    magick (>= 2.9.0),
+    png (>= 0.1-8),
+    readr (>= 2.1.5),
+    readxl (>= 1.4.5),
+    rlang (>= 1.1.6),
+    shiny (>= 1.11.1),
+    stringr (>= 1.5.2),
+    tibble (>= 3.3.0),
+    writexl (>= 1.5.4),
+    zip

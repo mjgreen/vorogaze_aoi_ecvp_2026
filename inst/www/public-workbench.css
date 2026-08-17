@@ -1,0 +1,29 @@
+.public-workbench-notice {
+  align-items: flex-start;
+  background: #e9f7f8;
+  border: 1px solid #8bc9ce;
+  border-radius: 0.65rem;
+  color: #12323b;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  line-height: 1.45;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.public-workbench-notice strong {
+  color: #006d75;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .public-workbench-notice {
+    display: block;
+  }
+
+  .public-workbench-notice strong {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+}

@@ -1,0 +1,271 @@
+:root {
+  --vz-ui-font-size: 0.76rem;
+  --vz-control-value-font-size: 0.7rem;
+  --vz-dt-font-size: 0.7rem;
+  --vz-dt-footer-font-size: var(--vz-dt-font-size);
+  --vz-ui-line-height: 1.16;
+  --vz-card-padding: 0.35rem;
+  --vz-control-padding-x: 0.3rem;
+  --vz-control-padding-y: 0.08rem;
+}
+
+body,
+.card,
+.card-header,
+.card-body,
+.shiny-input-container,
+.form-control,
+.form-select,
+.selectize-input,
+.selectize-dropdown,
+.btn,
+.control-label,
+label,
+.nav,
+.nav-link,
+.dropdown-item,
+.progress,
+.progress-bar,
+.dataTables_wrapper {
+  font-size: var(--vz-ui-font-size);
+  line-height: var(--vz-ui-line-height);
+}
+
+.form-control,
+.form-select,
+.selectize-input,
+.selectize-input input,
+.selectize-dropdown,
+.selectize-dropdown .option {
+  font-size: var(--vz-control-value-font-size) !important;
+  line-height: 1.15rem !important;
+}
+
+.selectize-input {
+  min-height: 1.5rem !important;
+  padding: var(--vz-control-padding-y) var(--vz-control-padding-x) !important;
+}
+
+/* Tight column-mapping controls */
+
+.fixrep-mapping-title {
+  font-size: var(--vz-ui-font-size);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.fixrep-mapping-ui,
+.fixrep-mapping-ui label,
+.fixrep-mapping-title {
+  font-size: var(--vz-ui-font-size) !important;
+}
+
+.fixrep-mapping-ui .shiny-input-container,
+.fixrep-mapping-ui .form-group {
+  margin-bottom: 0.12rem !important;
+}
+
+.fixrep-mapping-ui .selectize-control,
+.fixrep-mapping-ui label {
+  margin-bottom: 0 !important;
+}
+
+.fixrep-mapping-ui label,
+.fixrep-mapping-ui .selectize-input,
+.fixrep-mapping-ui .selectize-input > input {
+  line-height: 1.18rem !important;
+}
+
+.fixrep-mapping-ui .selectize-input {
+  min-height: 1.5rem !important;
+  padding: var(--vz-control-padding-y) var(--vz-control-padding-x) !important;
+}
+
+/* Tighten cards containing compact UI */
+.card:has(.fixrep-upload-box) .card-body,
+.card:has(.fixrep-mapping-ui) .card-body,
+.card:has(.compact-table-output) .card-body,
+.card:has(.dt-table-output) .card-body,
+.card:has(.fixrep-summary-output) .card-body {
+  padding: var(--vz-card-padding) !important;
+}
+
+.card:has(.fixrep-upload-box) .card-header,
+.card:has(.fixrep-mapping-ui) .card-header,
+.card:has(.compact-table-output) .card-header,
+.card:has(.dt-table-output) .card-header,
+.card:has(.fixrep-summary-output) .card-header {
+  padding: 0.35rem 0.5rem !important;
+  font-size: var(--vz-ui-font-size) !important;
+}
+
+/* Compact table previews */
+.compact-table-output {
+  font-size: var(--vz-ui-font-size);
+  line-height: var(--vz-ui-line-height);
+  max-height: 220px;
+  overflow: auto;
+}
+
+.dt-table-output {
+  font-size: var(--vz-dt-font-size);
+}
+
+.dt-table-output table.dataTable {
+  font-size: var(--vz-dt-font-size);
+  margin-bottom: 0;
+}
+
+.dt-table-output table.dataTable thead th,
+.dt-table-output table.dataTable tbody td {
+  line-height: var(--vz-ui-line-height);
+  padding: 2px 4px !important;
+  white-space: nowrap;
+}
+
+.dt-table-output table.dataTable thead input,
+.dt-table-output table.dataTable thead select {
+  font-size: var(--vz-control-value-font-size) !important;
+  line-height: 1.1rem !important;
+  min-height: 1.25rem;
+  padding: 1px 4px !important;
+  width: 100% !important;
+}
+
+.dt-table-output .dataTables_scrollBody thead div:has(.noUi-target) {
+  display: none !important;
+}
+
+.dt-table-output .dataTables_info,
+.dt-table-output .dataTables_paginate,
+.dt-table-output .dt-info,
+.dt-table-output .dt-paging,
+.dt-table-output .pagination,
+.dt-table-output .dataTables_paginate *,
+.dt-table-output .dt-paging *,
+.dt-table-output .pagination * {
+  font-size: var(--vz-dt-footer-font-size) !important;
+  line-height: var(--vz-ui-line-height) !important;
+  padding-top: 0.15rem !important;
+}
+
+.dt-table-output .dataTables_wrapper {
+  margin-bottom: 0;
+}
+
+.dt-table-output .dataTables_wrapper .dataTables_paginate .paginate_button,
+.dt-table-output .dataTables_wrapper .dt-paging .dt-paging-button,
+.dt-table-output .paginate_button,
+.dt-table-output .dt-paging-button,
+.dt-table-output .page-link {
+  font-size: var(--vz-dt-footer-font-size) !important;
+  margin-left: 0.1rem !important;
+  padding: 0.03rem 0.25rem !important;
+}
+
+.compact-table-output table {
+  margin-bottom: 0;
+}
+
+.compact-table-output th,
+.compact-table-output td {
+  padding: 0.15rem 0.3rem;
+  white-space: nowrap;
+}
+
+.dev-note {
+  font-size: var(--vz-ui-font-size);
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #ddd;
+  border-radius: 0.35rem;
+  background: #f8f9fa;
+  line-height: var(--vz-ui-line-height);
+}
+
+.app-summary {
+  margin-top: 0.45rem;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid #d7dde3;
+  border-radius: 0.35rem;
+  background: #f8f9fa;
+}
+
+.app-summary ul,
+.aoi-workbench-status ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1rem;
+}
+
+.app-summary p {
+  margin: 0.25rem 0 0;
+}
+
+.app-summary-ok {
+  border-color: #9ec5a8;
+  background: #f3faf5;
+}
+
+.app-summary-warning {
+  border-color: #e1be72;
+  background: #fff8e8;
+}
+
+.aoi-workbench-button-row {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.aoi-demo-button-row {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.aoi-demo-image-card {
+  align-self: start;
+  justify-self: center;
+  height: fit-content !important;
+  width: fit-content !important;
+  max-width: 100%;
+}
+
+.aoi-demo-image-card .card-body {
+  flex: 0 0 auto !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  overflow: hidden;
+}
+
+.aoi-demo-plot-frame {
+  flex: 0 0 auto;
+  width: 466px;
+  max-width: 100%;
+}
+
+.aoi-demo-metrics-card .card-body {
+  overflow-x: visible;
+}
+
+.aoi-demo-metrics-output {
+  max-height: none;
+  overflow: visible;
+}
+
+.aoi-demo-metrics-output table {
+  width: 100%;
+}
+
+.aoi-demo-metrics-output th,
+.aoi-demo-metrics-output td {
+  padding: 0.12rem 0.42rem;
+}
+
+.aoi-demo-fixture-output {
+  max-height: none;
+  margin-top: 1.2rem;
+  overflow: visible;
+}
